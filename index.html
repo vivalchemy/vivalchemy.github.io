@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivian Ludrick - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+        <a href="#home" class="nav-logo">}/{</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">
+                <span class="hero-name">VIVIAN LUDRICK</span>
+            </h1>
+            <p class="hero-subtitle fade-in">Fourth Year, Computer Engineering</p>
+            <p class="hero-description fade-in">Aspiring computer engineer with a passion for creating user-centric applications and innovative solutions.</p>
+            <div class="hero-buttons fade-in">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="/resume.pdf" class="btn btn-outline" download="Vivian_Ludrick_Resume.pdf">Download Resume</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate computer engineering student with a strong foundation in web development and modern technologies. Currently pursuing my Bachelor's degree at Fr. Conceicao Rodrigues College of Engineering, Bandra, with an 8.41 CGPA.</p>
+                    <p>My journey in tech has been driven by curiosity and a desire to build solutions that make a difference. I enjoy working with cutting-edge technologies and continuously learning new skills to stay at the forefront of innovation.</p>
+                </div>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <h3>Bachelor of Engineering</h3>
+                        <p class="education-field">Computer Engineering</p>
+                        <p class="education-details">8.41 CGPA • Fr. Conceicao Rodrigues College of Engineering, Bandra</p>
+                        <span class="education-year">2022</span>
+                    </div>
+                    <div class="education-item">
+                        <h3>High School Certificate</h3>
+                        <p class="education-field">Computer Engineering</p>
+                        <p class="education-details">84.5% • Narayana Junior College, Nalasopara</p>
+                        <span class="education-year">2020</span>
+                    </div>
+                    <div class="education-item">
+                        <h3>Secondary School</h3>
+                        <p class="education-field">Science</p>
+                        <p class="education-details">93.8% • Holy Cross Convent School, Nanbhat - Nalasopara</p>
+                        <span class="education-year">2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Software Intern</h3>
+                        <span class="experience-duration">Dec 2023 – May 2024</span>
+                    </div>
+                    <p class="experience-company">Modern Solutions Hub – HomeoGenie Platform</p>
+                    <ul class="experience-description">
+                        <li>Developed healthcare platform using React, Next.js, TypeScript with micro-frontend architecture and Module Federation</li>
+                        <li>Configured monorepo with pnpm workspaces and TurboRepo for optimized code sharing across multiple dashboards</li>
+                        <li>Implemented frontend features and debugged Flask REST API with SQLAlchemy ORM</li>
+                        <li>Containerized deployment using Docker and MakeFiles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>CRISPR Guide RNA Search</h3>
+                    <p class="project-description">Architected distributed system with Rust backend, Python ML scoring models, and PHP frontend for high-throughput gRNA analysis. Implemented concurrent pattern matching using segmented FASTA files, work-stealing threads, and SQLite queue management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Rust</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>HTTP Server From Scratch</h3>
+                    <p class="project-description">Built HTTP/1.1 server in Go from scratch without using standard net/http package. Implemented trie-based routing with wildcard support for efficient path matching. Developed custom request/response parsing with chunk encoding and reverse proxy capabilities.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">HTTP/1.1</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vivalchemy/http-server-from-scratch" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Temperature Monitor</h3>
+                    <p class="project-description">Architected temperature monitoring system with Go WebSockets, FastAPI Lambdas and React frontend. Implemented real-time data streaming, interactive charts, statistical analysis, and unit conversion. Managed data persistence with SQLite and generated type-safe queries using SQLC.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vivalchemy/temperature-monitor" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>hyprhaven</h3>
+                    <p class="project-description">A wallpaper downloader and switcher shell script for hyprland built using wallhaven api and hyprpaper. Automates the process of finding and applying beautiful wallpapers to your desktop environment.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Shell Scripting</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/vivalchemy/hyprhaven" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Svelte</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Make</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Neovim</span>
+                        <span class="skill-tag">tmux</span>
+                    </div>
+                </div>
+            </div>
+            <div class="achievements">
+                <h3>Achievements</h3>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <span class="achievement-title">First Place UI Design, Algozenith Unleashed: UI</span>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-title">Second Place Competitive Coding, Algoholic 1.0</span>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">Let's collaborate on exciting projects or discuss opportunities. Feel free to reach out!</p>
+                <div class="contact-grid">
+                    <a href="mailto:vivianludrick.main@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">vivianludrick.main@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/vivalchemy" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">@vivalchemy</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/vivalchemy" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">@vivalchemy</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vivian Ludrick. Built with passion and code and lots of AI🫠.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
